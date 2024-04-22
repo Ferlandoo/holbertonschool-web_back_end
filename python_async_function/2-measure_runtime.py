@@ -1,18 +1,14 @@
 #!/usr/bin/env python3
 """Basic async syntax"""
 import asyncio
-import random
 import time
+wait_n = __import__('1-concurrent_coroutines').wait_n
 
 
-async def measure_time(n: int, max_delay: int) -> float:
-    """Wait for a random delay and return it"""
+def measure_time(n: int, max_delay: int) -> float:
+    """a function that measures the total execution time"""
     start = time.time()
-    elem_list = []
-    for _ in range(n):
-        delay = random.uniform(0, max_delay)
-        await asyncio.sleep(delay)
-        elem_list.append(delay)
+    asyncio.run(wait_n(n, max_delay))
     end = time.time()
     total_time = end - start
     return total_time / n
