@@ -2,5 +2,6 @@
 """Type-annotated function add"""
 
 
-def add(num1: float, num2: float) -> float:
-    return num1 + num2
+def add(a: float, b: float) -> float:
+    """Return the sum of two floats"""
+    return a + b
