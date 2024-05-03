@@ -40,7 +40,7 @@ class Server:
         start, end = Server.index_range(page, page_size)
         return self.dataset()[start:end]
 
-    def get_hyper(self, page: int = 1, page_size: int =10) -> dict:
+    def get_hyper(self, page: int = 1, page_size: int = 10) -> dict:
         """Get the page with the pagination parameters"""
         data = self.get_page(page, page_size)
         total_pages = math.ceil(len(self.dataset()) / page_size)
