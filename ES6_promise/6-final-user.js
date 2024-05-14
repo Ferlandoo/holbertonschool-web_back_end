@@ -6,8 +6,8 @@ const handleProfileSignup = async (firstName, lastName, fileName) => {
     const user = await signUpUser(firstName, lastName);
     await uploadPhoto(fileName);
     console.log(`${user.firstName} ${user.lastName}`);
-  } catch (err) {
-    console.log(err.message);
+  } catch (error) {
+    console.log(error.message);
   }
 }
 
