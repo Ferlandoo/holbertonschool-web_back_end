@@ -1,4 +1,4 @@
-import loadBalancer from "./7-load_balancer";
+import loadBalancer from './7-load_balancer';
 
 const ukSuccess = 'Downloading from UK is faster';
 const frSuccess = 'Downloading from FR is faster';
@@ -18,6 +18,6 @@ const promiseFR = new Promise(function (resolve, reject) {
 const test = async () => {
   console.log(await loadBalancer(promiseUK, promiseFR));
   console.log(await loadBalancer(promiseUKSlow, promiseFR));
-}
+};
 
 test();

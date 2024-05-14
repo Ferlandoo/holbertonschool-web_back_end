@@ -1,5 +1,5 @@
-import signUpUser from './4-user-promise'
-import uploadPhoto from './5-photo-reject'
+import signUpUser from './4-user-promise';
+import uploadPhoto from './5-photo-reject';
 
 const handleProfileSignup = async (firstName, lastName, fileName) => {
   try {
@@ -9,6 +9,6 @@ const handleProfileSignup = async (firstName, lastName, fileName) => {
   } catch (error) {
     console.log(error.message);
   }
-}
+};
 
 export default handleProfileSignup;
