@@ -17,5 +17,5 @@ export default function getListStudents() {
     location: 'Francisco',
   };
 
-  return typeof [firstStudent, secondStudent, thirdStudent];
+  return [firstStudent, secondStudent, thirdStudent];
 }
