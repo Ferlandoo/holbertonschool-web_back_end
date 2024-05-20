@@ -13,7 +13,7 @@ export default function getListStudents() {
 
   let thirdStudent = {
     id: 5,
-    name: 'Sarena',
+    name: 'Serana',
     location: 'Francisco',
   };
 
