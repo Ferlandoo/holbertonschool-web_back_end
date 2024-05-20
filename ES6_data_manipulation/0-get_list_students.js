@@ -1,7 +1,5 @@
-export default function getListStudents() {
-  return [
-    { id: 1, name: 'Guillaume', location: 'San Francisco' },
-    { id: 2, name: 'James', location: 'Columbia' },
-    { id: 5, name: 'Serana', location: 'Francisco' },
-  ];
-}
+export default getListStudents = () => [
+  { id: 1, name: 'Guillaume', location: 'San Francisco' },
+  { id: 2, name: 'James', location: 'Columbia' },
+  { id: 5, name: 'Serena', location: 'Francisco' },
+];
