@@ -1,19 +1,19 @@
 export default function getListStudents() {
-  const firstStudent = {
+  let firstStudent = {
     id: 1,
     name: 'Guillaume',
     location: 'San Francisco',
   };
 
-  const secondStudent = {
+  let secondStudent = {
     id: 2,
     name: 'James',
     location: 'Columbia',
   };
 
-  const thirdStudent = {
+  let thirdStudent = {
     id: 5,
-    name: 'Sarana',
+    name: 'Sarena',
     location: 'Francisco',
   };
 
